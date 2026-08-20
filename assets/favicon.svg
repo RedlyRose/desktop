@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Squircle Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#845EC2"/>
+      <stop offset="50%" stop-color="#D65DB1"/>
+      <stop offset="100%" stop-color="#FF6F91"/>
+    </linearGradient>
+
+    <!-- Monitor / Face Base Gradient -->
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3E8FF"/>
+    </linearGradient>
+
+    <!-- Screen Gradient -->
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F1D36"/>
+      <stop offset="100%" stop-color="#3F3356"/>
+    </linearGradient>
+
+    <!-- Ear / Cheek Pink -->
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9EAA"/>
+      <stop offset="100%" stop-color="#FF6F91"/>
+    </linearGradient>
+
+    <!-- Gold Sparkle -->
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF475"/>
+      <stop offset="100%" stop-color="#FFB800"/>
+    </linearGradient>
+
+    <!-- Eye Gradient -->
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="50%" stop-color="#A29BFE"/>
+      <stop offset="100%" stop-color="#FD79A8"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="cuteShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#501869" flood-opacity="0.35"/>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle Frame with soft border -->
+  <rect x="16" y="16" width="480" height="480" rx="120" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="120" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-opacity="0.35"/>
+
+  <!-- Subtle Top Glass Gloss on Container -->
+  <path d="M 32,136 C 32,78 78,32 136,32 L 376,32 C 434,32 480,78 480,136 C 480,170 360,200 256,200 C 140,200 32,170 32,136 Z" fill="#FFFFFF" opacity="0.16"/>
+
+  <g filter="url(#cuteShadow)">
+    <!-- Cat Ears -->
+    <!-- Left Ear Outer -->
+    <path d="M 120,180 C 105,120 125,75 165,85 C 200,95 210,145 205,175 Z" fill="#FFFFFF"/>
+    <!-- Left Ear Inner -->
+    <path d="M 135,165 C 125,125 138,98 162,104 C 185,110 190,145 188,165 Z" fill="url(#pinkGrad)"/>
+
+    <!-- Right Ear Outer -->
+    <path d="M 392,180 C 407,120 387,75 347,85 C 312,95 302,145 307,175 Z" fill="#FFFFFF"/>
+    <!-- Right Ear Inner -->
+    <path d="M 377,165 C 387,125 374,98 350,104 C 327,110 322,145 324,165 Z" fill="url(#pinkGrad)"/>
+
+    <!-- Cute Kawaii Desktop / Monitor Face Body -->
+    <rect x="96" y="140" width="320" height="260" rx="64" fill="url(#faceGrad)"/>
+    
+    <!-- Monitor Bezel / Screen -->
+    <rect x="116" y="160" width="280" height="205" rx="44" fill="url(#screenGrad)"/>
+
+    <!-- Screen Gloss Highlight -->
+    <path d="M 126,180 C 126,168 136,160 148,160 L 364,160 C 376,160 386,168 386,180 C 340,205 200,230 126,180 Z" fill="#FFFFFF" opacity="0.12"/>
+
+    <!-- Cute Sparkling Eyes -->
+    <!-- Left Eye -->
+    <g>
+      <ellipse cx="190" cy="245" rx="26" ry="32" fill="url(#eyeGrad)"/>
+      <ellipse cx="190" cy="242" rx="24" ry="29" fill="#1F1D36"/>
+      <!-- Eye Highlights -->
+      <circle cx="180" cy="230" r="10" fill="#FFFFFF"/>
+      <circle cx="200" cy="256" r="5.5" fill="#FFFFFF"/>
+      <circle cx="183" cy="258" r="3" fill="#FF9EAA"/>
+      <!-- Eyelash / top lid -->
+      <path d="M 160,232 C 172,216 208,216 220,232" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Right Eye -->
+    <g>
+      <ellipse cx="322" cy="245" rx="26" ry="32" fill="url(#eyeGrad)"/>
+      <ellipse cx="322" cy="242" rx="24" ry="29" fill="#1F1D36"/>
+      <!-- Eye Highlights -->
+      <circle cx="312" cy="230" r="10" fill="#FFFFFF"/>
+      <circle cx="332" cy="256" r="5.5" fill="#FFFFFF"/>
+      <circle cx="315" cy="258" r="3" fill="#FF9EAA"/>
+      <!-- Eyelash / top lid -->
+      <path d="M 292,232 C 304,216 340,216 352,232" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Rosy Blushing Cheeks -->
+    <ellipse cx="152" cy="275" rx="20" ry="12" fill="#FF6F91" opacity="0.85"/>
+    <ellipse cx="360" cy="275" rx="20" ry="12" fill="#FF6F91" opacity="0.85"/>
+    <!-- Blush lines -->
+    <line x1="144" y1="271" x2="148" y2="279" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <line x1="152" y1="271" x2="156" y2="279" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <line x1="160" y1="271" x2="164" y2="279" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    
+    <line x1="352" y1="271" x2="356" y2="279" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <line x1="360" y1="271" x2="364" y2="279" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <line x1="368" y1="271" x2="372" y2="279" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Cute Cat Mouth :3 -->
+    <path d="M 238,260 C 244,272 254,272 256,263 C 258,272 268,272 274,260" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Cute Little Tongue -->
+    <path d="M 250,266 C 250,277 262,277 262,266 Z" fill="#FF6F91"/>
+
+    <!-- Monitor Stand Base (Paw-like / Cute Stand) -->
+    <path d="M 226,400 L 216,432 C 214,438 220,444 226,444 L 286,444 C 292,444 298,438 296,432 L 286,400 Z" fill="#FFFFFF"/>
+    <ellipse cx="256" cy="444" rx="55" ry="12" fill="#FFFFFF"/>
+    <ellipse cx="256" cy="444" rx="42" ry="7" fill="#E8D5F5"/>
+  </g>
+
+  <!-- Cute Floating Sparkles / Stars -->
+  <!-- Top Right Sparkle Star -->
+  <g filter="url(#softGlow)">
+    <path d="M 420,95 C 420,112 428,120 445,120 C 428,120 420,128 420,145 C 420,128 412,120 395,120 C 412,120 420,112 420,95 Z" fill="url(#sparkleGrad)"/>
+    <circle cx="420" cy="120" r="4" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Left Floating Heart -->
+  <g filter="url(#softGlow)" transform="translate(68, 230) rotate(-15) scale(0.9)">
+    <path d="M 12,21.35 C 5,16.5 0,12.2 0,7 C 0,3 3,0 7,0 C 9.5,0 11.5,1.2 12,3 C 12.5,1.2 14.5,0 17,0 C 21,0 24,3 24,7 C 24,12.2 19,16.5 12,21.35 Z" fill="#FF6584"/>
+  </g>
+
+  <!-- Mini Sparkle Bottom Right -->
+  <g filter="url(#softGlow)">
+    <path d="M 430,360 C 430,370 435,375 445,375 C 435,375 430,380 430,390 C 430,380 425,375 415,375 C 425,375 430,370 430,360 Z" fill="#FFF475"/>
+  </g>
+</svg>
